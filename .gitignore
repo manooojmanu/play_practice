@@ -9,6 +9,7 @@ bin/
 /project/target
 /target
 tmp/
+/.idea/
 test-result
 server.pid
 *.eml

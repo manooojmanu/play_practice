@@ -1,0 +1,28 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET         /                          controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET         /count                     controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET         /message                   controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file              controllers.Assets.versioned(path="/public", file: Asset)
+
+#Employee Routes
+POST        /employee/create           com.manoj.controllers.EmployeeController.create
+
+#Actor Routes
+
+GET         /divide                    com.manoj.controllers.ActorController.divide
+POST        /divide                    com.manoj.controllers.ActorController.divide1(value:String)
+GET         /initializeComments        com.manoj.controllers.ActorController.initialize()
+GET         /comments                  com.manoj.controllers.ActorController.comments()
+GET         /actor/comments            com.manoj.controllers.ActorController.actorComments()
+GET         /comments/:uuid            com.manoj.controllers.ActorController.byUUID(uuid)
+GET         /dummy                     com.manoj.controllers.ActorController.dummy
+
