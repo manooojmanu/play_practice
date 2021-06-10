@@ -1,2 +1,2 @@
 # play_practice
-Playing with Play framework and actors
+Playing with Play framework and Akka actors
